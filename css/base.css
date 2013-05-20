@@ -1,0 +1,322 @@
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline; }
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block; }
+	body {
+		line-height: 1; }
+	ol, ul {
+		list-style: none; }
+	blockquote, q {
+		quotes: none; }
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none; }
+	table {
+		border-collapse: collapse;
+		border-spacing: 0; }
+
+
+/* #Basic Styles
+================================================== */
+	body {
+		background: #f9f9f9;
+		font: 14px/1.6 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #555;
+		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+		-webkit-text-size-adjust: 100%;
+ }
+
+
+/* #Typography
+================================================== */
+h1, h2, h3, h4, h5, h6 {
+	color: #111;
+	font-weight: 300;
+  margin-bottom:10px;
+}
+
+h1 			{ font-size: 60px; line-height: 1.2; }
+h2 			{ font-size: 48px; line-height: 1.3; }
+h3 			{ font-size: 36px; line-height: 1.4; }
+h4 			{ font-size: 24px; line-height: 1.5; }
+h5 			{ font-size: 21px; line-height: 1.6; }
+h6 			{ font-size: 18px; line-height: 1.7; }
+
+p 			{ margin: 0 0 20px 0; }
+em 			{ font-style: italic; }
+strong 	{ font-weight: bold; }
+hr 			{ border: solid #ddd; border-width: 1px 0 0; clear: both; margin-bottom: 20px; height: 0; }
+
+
+/* #Forms
+================================================== */
+input, textarea,
+select {
+	border: 1px solid #ccc;
+  display:block;
+  border: 1px solid rgb(203,203,203);
+  display: inline;
+  padding:5px;
+  margin-bottom:0px;
+  font-size: inherit;
+  font-weight: 300;
+  color: black;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;
+
+}
+
+/* #Links
+================================================== */
+	a { color: #333; text-decoration: underline; outline: 0; }
+	a:hover, a:focus { color: #000; }
+  
+/* #Tables
+================================================== */
+table {
+  width:100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  background-color:#fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  overflow:hidden;
+  -moz-box-shadow: 0px 0px 1px #aaa;
+  -webkit-box-shadow: 0px 0px 1px #aaa;
+  box-shadow: 0px 0px 1px #555;
+}
+
+table,td,th {
+  padding: 10px;
+  text-align: center;  
+}
+
+
+
+.head {
+  background-color: #4a4a4a;
+  color:#fff;
+  font-weight:bold;
+}
+
+.even{
+  background-color: #eee;
+  
+}
+
+
+/* #buttons
+================================================== */
+
+button, .button {
+  margin-left:10px;
+  background-color: #777;
+  padding:5px;
+  border:none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  overflow:hidden;
+  font-weight:300;
+  color:#fff;
+  cursor: hand;
+  cursor: pointer;
+}
+
+button:hover, .button:hover{
+  background-color: #999;
+  cursor: hand;
+  cursor: pointer;
+}
+
+button:active, .button:active{
+  background-color: #222;
+  cursor: hand;
+  cursor: pointer;
+}
+
+
+button.red{
+  background-color: #E74C3C;  
+}
+
+button.red:hover{
+  background-color: #F74C3C;
+}
+
+button.red:active{
+  background-color: #C0392B;
+}
+
+button.green{
+  background-color: #2ECC71;  
+}
+
+button.green:hover{
+  background-color: #2EDD71;
+}
+
+button.green:active{
+  background-color: #27AE60;
+}
+
+button.blue{
+  background-color: #3498DB;  
+}
+
+button.blue:hover{
+  background-color: #3899EE;
+}
+
+button.blue:active{
+  background-color: #2980B9;
+}
+
+/* #glyphs
+================================================== */
+
+@font-face {
+  font-family: "Flat-UI-Icons-24";
+  src: url("../fonts/Flat-UI-Icons-24.eot");
+  src: url("../fonts/Flat-UI-Icons-24.eot?#iefix") format("embedded-opentype"), url("../fonts/Flat-UI-Icons-24.woff") format("woff"), url("../fonts/Flat-UI-Icons-24.ttf") format("truetype"), url("../fonts/Flat-UI-Icons-24.svg#Flat-UI-Icons-24") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+  font-family: "Flat-UI-Icons-24";
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased; }
+
+/* Use the following CSS code if you want to have a class per icon */
+/*Instead of a list of all class selectors,
+ *you can use the generic selector below, but it's slower:
+ *[class*="fui-"]:before { */
+.fui-video-24:before, .fui-time-24:before, .fui-settings-24:before, .fui-plus-24:before, .fui-new-24:before, .fui-menu-24:before, .fui-man-24:before, .fui-mail-24:before, .fui-lock-24:before, .fui-location-24:before, .fui-heart-24:before, .fui-eye-24:before, .fui-cross-24:before, .fui-cmd-24:before, .fui-checkround-24:before, .fui-checkmark-24:before, .fui-calendar-24:before, .fui-bubble-24:before, .fui-volume-24:before, .fui-camera-24:before {
+  font-family: "Flat-UI-Icons-24";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  font-size: 15pt;
+  -webkit-font-smoothing: antialiased; }
+
+.fui-video-24:before {
+  content: "\e000"; }
+
+.fui-time-24:before {
+  content: "\e001"; }
+
+.fui-settings-24:before {
+  content: "\e002"; }
+
+.fui-plus-24:before {
+  content: "\e003"; }
+
+.fui-new-24:before {
+  content: "\e005"; }
+
+.fui-menu-24:before {
+  content: "\e006"; }
+
+.fui-man-24:before {
+  content: "\e007"; }
+
+.fui-mail-24:before {
+  content: "\e008"; }
+
+.fui-lock-24:before {
+  content: "\e009"; }
+
+.fui-location-24:before {
+  content: "\e00a"; }
+
+.fui-heart-24:before {
+  content: "\e00b"; }
+
+.fui-eye-24:before {
+  content: "\e00c"; }
+
+.fui-cross-24:before {
+  content: "\e00d"; }
+
+.fui-cmd-24:before {
+  content: "\e00e"; }
+
+.fui-checkround-24:before {
+  content: "\e00f"; }
+
+.fui-checkmark-24:before {
+  content: "\e010"; }
+
+.fui-calendar-24:before {
+  content: "\e011"; }
+
+.fui-bubble-24:before {
+  content: "\e012"; }
+
+.fui-volume-24:before {
+  content: "\e013"; }
+
+.fui-camera-24:before {
+  content: "\e004"; }
+  
+/* #helper classes
+================================================== */
+
+.shadow {
+  -moz-box-shadow:    3px 3px 0px 6px #000;
+  -webkit-box-shadow: 3px 3px 0px 6px #000;
+  box-shadow:         3px 3px 0px 6px #000;
+}
+
+.round-rect {
+  border-radius: 4px;
+  margin:0 0 10px 0;
+  background-color:#fff;
+  padding:10px;
+  -moz-box-shadow: 0px 0px 1px #aaa;
+  -webkit-box-shadow: 0px 0px 1px #aaa;
+  box-shadow: 0px 0px 1px #555;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+
+.margin-r{
+  margin-right:10px;
+}
+
+.alpha{
+  margin-left:0px;
+}
+
+.omega{
+  margin-right:0px;
+}
